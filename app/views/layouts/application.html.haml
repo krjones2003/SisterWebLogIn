@@ -1,55 +1,57 @@
 !!! 5
 %html
   %head
-    %img{:alt => "SisterWeb Logo", :height => "60", :src => "http://s17.postimg.org/8os55eqr3/Sister_Web.jpg", :width => "60"}/
     %title 
     = stylesheet_link_tag 'application'
     = javascript_include_tag 'application'
     = csrf_meta_tags
     /* no bullets of margins on list for navigation*/
-    :css
-      ul {
-          list-style-type: none;
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          background-color: #333;
-      }
-      
-      li {
-          float: left;
-      }
-      
-      li a {
-          display: block;
-          color: white;
-          text-align: center;
-          padding: 14px 16px;
-          text-decoration: none;
-      }
-      
-      li a:hover:not(.active) {
-          background-color: #111;
-      }
-      
-      .active {
-          background-color: #4CAF50;
-      }
+   
   %body
-    %p
+    %navbar
     /* navigation bar is a list */
     %ul
       %li
-        %a{:href => "/staticpages/home"} Home
+        %a.active{:href => "#about"} About
       %li{:style => "float:right"}
         %a.active{:href => "/profiles"} Profiles
       %li{:style => "float:right"}
         %a.active{:href => "#forums"} Forums
       %li{:style => "float:right"}
-        %a.active{:href => "#about"} About
-    #main-container.container
-      .row
-        .col-xs-3
-          %h2 
-        .col-xs-9
-          = yield
+        %a.active{:href => "/staticpages/home"} Home
+      %li{:style => "float:right"}  
+         
+    
+    .jumbotron
+  .container
+    %img{:alt => "Photo", :src => asset_path("spiderweb2.png")}
+    %p
+      %a.btn.btn-primary.btn-lg{:href => "#", :role => "button"} Learn More »
+    
+    .container.marketing
+  / Three columns of text below the carousel
+  .row
+    .col-lg-4
+      %img.img-circle{:alt => "Generic placeholder image", :height => "140", :src => "data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==", :width => "140"}/
+      %h2 Heading
+      %p Text Here
+      %p
+        %a.btn.btn-secondary{:href => "#", :role => "button"} View details »
+    / /.col-lg-4
+    .col-lg-4
+      %img.img-circle{:alt => "Generic placeholder image", :height => "140", :src => "data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==", :width => "140"}/
+      %h2 Heading
+      %p Text Here
+      %p
+        %a.btn.btn-secondary{:href => "#", :role => "button"} View details »
+    / /.col-lg-4
+    .col-lg-4
+      %img.img-circle{:alt => "Generic placeholder image", :height => "140", :src => "data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==", :width => "140"}/
+      %h2 Heading
+      %p More Txt Here
+      %p
+        %a.btn.btn-secondary{:href => "#", :role => "button"} View details »
+    / /.col-lg-4
+  / /.row
+    
+  = yield

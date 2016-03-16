@@ -1,4 +1,57 @@
 
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    
+}
+
+
+
+ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+      }
+      
+      li {
+          float: right;
+      }
+      
+      
+      li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 18px 13px;
+          text-decoration: none;
+          font-family: "Helvetica";
+      }
+      
+      li a:hover{
+          background-color: #111;
+      }
+      
+.container img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 25px;
+}  
+
+.container a{
+    color: black;
+    font-family: "Helvetica";
+    margin-left: 3px;
+} 
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
