@@ -23,7 +23,8 @@ ul {
       }
       
       li {
-          float: right;
+          float: left;
+          margin-left: 5px;
       }
       
       
@@ -31,26 +32,45 @@ ul {
           display: block;
           color: white;
           text-align: center;
-          padding: 18px 13px;
+          padding: 10px 6px;
           text-decoration: none;
-          font-family: "Helvetica";
+          font-family: "Helvetica Neue";
+          font-size: 13px;
       }
       
       li a:hover{
           background-color: #111;
       }
       
+   
 .container img{
     width: 100%;
-    height: auto;
-    margin-bottom: 25px;
+    height: 490px;
 }  
 
-.container a{
+.container h1{
     color: black;
-    font-family: "Helvetica";
-    margin-left: 3px;
+    font-family: "Helvetica Neue";
+    font-sizing: 35px;
+    padding: 0px;
+    
 } 
+
+.container h2{
+     color: black;
+    font-family: "Helvetica Neue";
+    font-sizing: 35px;
+    padding: 0px;     
+}
+
+.container {
+          margin-bottom: 20px;
+}
+
+.container row{
+          float: center;
+}
+
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
