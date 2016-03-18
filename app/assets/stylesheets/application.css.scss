@@ -50,8 +50,9 @@ ul {
     -webkit-fade: (50%);
     width: 100%;
     height: 650px;
-    border-bottom: 80px solid #333;
-    border-top: 80px solid #282d20;
+    border-bottom: 80px solid black;
+    border-top: 68px solid black;
+    margin-bottom: 20px;
 
 }  
 
@@ -65,7 +66,7 @@ ul {
     -webkit-text-stroke-color: #333;
     font-size: 53px;
     left: 105px;
-    top: 48px;
+    top: 15px;
     padding: 0px;
     margin: 1px;
 }
@@ -80,7 +81,7 @@ ul {
     font-size: 18px;
     size: 100px;
     left: 106px;
-    top: 108px;
+    top: 77px;
     padding: 0px;
     margin: 1px;
 }
@@ -95,18 +96,37 @@ ul {
 
 .container h2{
     color: black;
-    font-family: 'Lato', sans-serif;
+    font-family: "Helvetica";
     font-size: 35px;
     padding: 0px;     
 }
 
+.container a{
+    margin-top: 20px;
+    margin-left: 5px;
+    font-family: "Helvetica";
+    color: black;
+}
 .container {
           margin-bottom: 20px;
 }
 
-.container row{
-          float: center;
+.row{
+    margin-top: 60px;
+    text-align: center;
+    width: 100%;
+    display: table;
+    font-family: "Helvetica";
+    color: black;      
 }
+
+
+.col-lg-4 {
+    display: table-cell;
+    font-family: "Helvetica";
+    color: black;  
+}
+
 
 
 /*
