@@ -7,4 +7,5 @@ class StaticpagesController < ApplicationController
 
   def links
   end
+  
 end
