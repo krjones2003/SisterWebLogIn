@@ -2,9 +2,9 @@ Rails.application.routes.draw do
 
   get 'staticpages/home'
 
-  get 'staticpages/about'
+  get 'staticpages/profiles'
 
-  get 'staticpages/links'
+  get 'staticpages/calendar'
 
   resources :profiles
   root :to => redirect('/staticpages/home')
