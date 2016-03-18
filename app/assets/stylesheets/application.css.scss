@@ -17,51 +17,86 @@ body{
 ul {
           list-style-type: none;
           margin: 0;
-          padding: 0;
           overflow: hidden;
-          background-color: #333;
+          background-color: black;
       }
       
       li {
-          float: left;
-          margin-left: 5px;
+          float: right;
       }
       
       
       li a {
           display: block;
           color: white;
-          text-align: center;
-          padding: 10px 6px;
+          padding-top: 20px; 
+          padding-bottom: 5px;
+          padding-left: 10px;
+          padding-right: 10px;
           text-decoration: none;
           font-family: "Helvetica Neue";
-          font-size: 13px;
+          font-size: 15px;
+          margin-right: 8px;
       }
       
       li a:hover{
-          background-color: #111;
+          background-color: #333;
       }
-      
+     
    
 .container img{
+    -webkit-filter: grayscale(90%);
+    -webkit-filter: brightness(90%);
+    -webkit-fade: (50%);
     width: 100%;
-    height: 485px;
-    padding: 0px;
+    height: 650px;
+    border-bottom: 80px solid #333;
+    border-top: 80px solid #282d20;
+
 }  
 
 .container h1{
-    color: black;
+    position: absolute;
+    letter-spacing: 2px;
+    color: white;
     font-family: "Helvetica Neue";
-    font-sizing: 35px;
+    font-style: normal;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #333;
+    font-size: 53px;
+    left: 105px;
+    top: 48px;
     padding: 0px;
-    margin:0px;
-    
-} 
+    margin: 1px;
+}
+
+.container p{
+    position: absolute;
+    color: white;
+    font-family: "Helvetica";
+    font-weight: 2px;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #333;
+    font-size: 18px;
+    size: 100px;
+    left: 106px;
+    top: 108px;
+    padding: 0px;
+    margin: 1px;
+}
+
+.container .small-logo{
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    left: 10px;
+    top: 200px;
+}
 
 .container h2{
-     color: black;
-    font-family: "Helvetica Neue";
-    font-sizing: 35px;
+    color: black;
+    font-family: 'Lato', sans-serif;
+    font-size: 35px;
     padding: 0px;     
 }
 
