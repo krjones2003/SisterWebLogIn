@@ -18,9 +18,11 @@
       %li{:style => "float:right"}
         %a.active{:href => "#forums"} Forums
       %li{:style => "float:right"}
-        %a.active{:href => "#calendar"} Calendar
-      %li{:style => "float:left"}  
-         
-    
-    
-    = yield
+        %a.active{:href => "/calendar"} Calendar
+    #main-container.container
+      .row
+        .col-xs-3
+          %h2 
+        .col-xs-9
+          = yield
+
