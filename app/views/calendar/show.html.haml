@@ -10,3 +10,7 @@
   .col-md-12
     = calendar @date do |date|
       = date.day
+      %ul
+        - @events_by_date.each do |t|
+          - if t.when == date
+            %li= link_to(t.what, t)
