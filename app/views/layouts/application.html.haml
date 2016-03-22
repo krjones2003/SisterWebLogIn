@@ -2,23 +2,36 @@
 %html
   %head
     %title 
-    = stylesheet_link_tag 'application'
-    = javascript_include_tag 'application'
+    = stylesheet_link_tag 'application', media: "all", "data-turbolinks-track" => true 
+    = javascript_include_tag 'application', "data-turbolinks-track" => true 
     = csrf_meta_tags
     /* no bullets of margins on list for navigation*/
    
   %body
-    %navbar
-    
+    .masthead  
+      .container-masthead
+        .col-md-4
+          %img.img-logo{:alt => "Logo", :height => "70", :src => asset_path("spiral.png"),
+          :width => "70", :style => "float:left"}/
+        .col-md-8  
+          %h3{:style => "float:left"} SisterWeb
+          
+      
+  %navbar
     %ul
-      %li
-        %a.active{:href => '#calendar'} Calendar
+      %li.active
+        %a{:href => "#signin"} Log In | Sign Up
       %li{:style => "float:right"}
-        %a.active{:href => "/profiles"} Profiles
+        %a{:href => "#forums"} Forums
       %li{:style => "float:right"}
-        %a.active{:href => "/staticpages/home"} Home
-      %li{:style => "float:left"}  
-         
+        %a{:href => "#calendar"} Calendar
+      %li{:style => "float:right"}
+        %a{:href => "/profiles"} Profiles
+      %li{:style => "float:right"}
+        %a{:href => '/staticpages/home'} Home
+      %li{:style => "float:right"}  
+      
     
     
     = yield
+

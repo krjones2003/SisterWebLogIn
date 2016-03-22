@@ -4,39 +4,38 @@
     %meta{:charset => "utf-8"}
       %meta{:content => "IE=edge", "http-equiv" => "X-UA-Compatible"}
         %meta{:content => "width=device-width, initial-scale=1", :name => "viewport"}
-          %meta{:content => "Platina Education Group", :name => "description"}
+          %meta{:content => "SisterWeb", :name => "description"}
             %meta{:content => "D.Dekker, K. Jones, Shay Shay, V. Martinez", :name => "author"}
               %link{:href => "../../favicon.ico", :rel => "icon"}
                 %title SisterWeb
                 / Bootstrap core CSS
-                %link{:href => "../../dist/css/bootstrap.min.css", :rel => "stylesheet"}
-                  / Custom styles for this template
-                  %link{:href => "application.css.sass", :rel => "stylesheet"}
+                %link{:href => "../../dist/css/bootstrap.min.css",:rel => "stylesheet"}
+              %style {:type="text/css"}     
+                
   %body
     / Jumbotron
     .jumbotron
-      .container
-        .col-md-4
-          .large-logo
-            %img{:alt => "Placeholder Image", :src => asset_path("spiderweb2.jpg"), :width => "375"}
+      .container-jumbotron
         .col-md-8
-          %h1 SisterWeb
-          %p Built by women in tech for women in tech
-          %a.btn.btn-primary.btn-lg{:href => "#", :role => "button"} Learn more about SisterWeb »
+          %h1 Built by women in tech for women in tech.
+          %p
+          %p
+        .col-md-4
+          %a.btn.btn-primary.btn-lg{:href => "/staticpages/about", :role => "button"} Learn more
+          
           
     / Three columns of text below the carousel
-    .row
+    .row-jumbotron
       .col-lg-4
-        %img.img-circle{:alt => "Generic placeholder image", :height => "90", :src => asset_path("molecule.png"), :width => "90"}/
+        %img.img-circle{:alt => "Generic placeholder image", :height => "80", :src => asset_path("molecule.png"), :width => "80"}/
         %h2 Connect
-        
       / /.col-lg-4
       .col-lg-4
-        %img.img-circle{:alt => "Generic placeholder image", :height => "90", :src => asset_path("Newton.png"), :width => "90"}/
+        %img.img-circle{:alt => "Generic placeholder image", :height => "80", :src => asset_path("Newton.png"), :width => "80"}/
         %h2 Community 
       / /.col-lg-4
       .col-lg-4
-        %img.img-circle{:alt => "Generic placeholder image", :height => "90", :src => asset_path("head.png"), :width => "90"}/
+        %img.img-circle{:alt => "Generic placeholder image", :height => "80", :src => asset_path("head.png"), :width => "80"}/
         %h2 Advice
     / /.row
   

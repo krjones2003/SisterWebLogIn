@@ -1,5 +1,4 @@
 
-
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -7,116 +6,158 @@
     box-sizing: border-box;
 }
 
-body{
-    background-color: white;
-    
-}
 
-
-
-ul {
-          list-style-type: none;
-          margin: 0;
-          overflow: hidden;
-          background-color: black;
-      }
-      
-      li {
-          float: right;
-      }
-      
-      
-      li a {
-          display: block;
-          color: white;
-          padding-top: 20px; 
-          padding-bottom: 5px;
-          padding-left: 10px;
-          padding-right: 10px;
-          text-decoration: none;
-          font-family: "Helvetica Neue";
-          font-size: 15px;
-          margin-right: 8px;
-      }
-      
-      li a:hover{
-          background-color: #333;
-      }
-     
-   
-.container img{
-    -webkit-filter: grayscale(90%);
-    -webkit-filter: brightness(90%);
-    -webkit-fade: (50%);
-    width: 100%;
-    height: 100%;
-    border-bottom: 80px solid black;
-    border-top: 63px solid black;
-    margin-bottom: 20px;
-
-}  
-
-.container h1{
-    position: absolute;
-    letter-spacing: 2px;
-    color: white;
+html{
     font-family: "Helvetica Neue";
     font-style: normal;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #333;
-    font-size: 53px;
-    left: 105px;
-    top: 15px;
-    padding: 0px;
-    margin: 1px;
+    text-decoration: none;
 }
 
-.container p{
-    position: absolute;
-    color: white;
-    font-family: "Helvetica";
-    font-weight: 2px;
-    -webkit-text-stroke-width: 0.5px;
-    -webkit-text-stroke-color: #333;
-    font-size: 18px;
-    size: 100px;
-    left: 106px;
-    top: 77px;
-    padding: 0px;
-    margin: 1px;
+.masthead:before{
+    height: 50px;
+    display: compact;
+    content: "";
+    display: block;
+    margin: 0px;
 }
 
-.container .small-logo{
+.masthead .container-masthead{
     position: absolute;
-    height: 30px;
-    width: 30px;
+    top: 10px;
     left: 10px;
-    top: 200px;
+    width: 100%;
+    display: table;
+    margin-bottom: 1px;
+    margin-left: 10px;
+    height: 40px;
+    display: inline;
+}
+
+.img-logo{
+    margin: 4em;
+    font-size: 1em;
+    display: inline-block; 
+    margin: 0px;
+}
+
+h3 {
+    display: inline-block;
+    vertical-align: center;
+    margin-left: 5px;
+    margin-top: 15px;
+    padding: 0px;
+    letter-spacing: 1px;
+    font-size: 3.25vw;
+    text-decoration: none;
+
+}
+
+ul {
+      width: 100%;
+      list-style-type: none;
+      margin-top: 0px;
+      margin-bottom: 0px;
+      overflow: hidden;
+      background-color: white;
+      padding: 0px 15px;
+      display: inline-block; 
+  }
+  
+  li {
+      float: right;
+  }
+  
+  
+  li a {
+      display: block;
+      color: #00ace6;
+      text-align: top;
+      padding-top: 10px; 
+      padding-bottom: 8px;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-decoration: none;
+      font-family: "Helvetica Neue";
+      font-size: 18px;
+      margin-right: 8px;
+  }
+      
+      li a:hover{
+          text-color: #1ac6ff;
+      }
+     
+.jumbotron:before {
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+    height: 420px;
+    background-image: url('web2.jpg');
+    -webkit-filter: opacity(20%);
+    z-index: -1;
+    background-size: 100% 100%;
+    background-repeat:no-repeat;
+    display: compact;
+    content: "";
+    display: block;
+}
+
+.jumbotron .container-jumbotron {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.container-jumbotron h1 {
+   display: block;
+   margin: auto;
+   color: #333;
+   font-size: 3.5vw;
+   letter-spacing: .75px;
+   margin-bottom: 70px;
 }
 
 .container h2{
     color: black;
-    font-family: "Helvetica";
+    font-family: "Helvetica Neue";
     font-size: 35px;
     padding: 0px;     
+}
+
+
+a.btn.btn-primary.btn-lg{
+    color: white ;
+    background-color: #ffab00;
+    border-color: #ffab00;
+    padding: 8px 18px;
+    font-size: 21px;
+    text-decoration: none;
+    line-height: 1.333333;
+    border-radius: .3rem;
+    display: inline-block; 
+    margin-left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
 }
 
 .container a{
     margin-top: 20px;
     margin-left: 5px;
-    font-family: "Helvetica";
+    font-style: regular;
     color: black;
 }
-.container {
-          margin-bottom: 20px;
-}
 
-.row{
+
+
+.row-jumbotron {
     margin-top: 60px;
     text-align: center;
     width: 100%;
     display: table;
-    font-family: "Helvetica";
+    font-style: regular;
     color: black;      
 }
 
@@ -124,9 +165,9 @@ ul {
 .col-lg-4 {
     size: 15px;
     display: table-cell;
-    font-family: "Helvetica";
     color: black;  
 }
+
 
 
 
@@ -145,3 +186,5 @@ ul {
  *= require_tree .
  *= require_self
  */
+ 
+@import "bootstrap-sprockets"
