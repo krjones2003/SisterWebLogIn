@@ -1,3 +1,30 @@
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 0.9em;
+    }
+}
+
+/* sm */
+@media screen and (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+    body {
+        font-size: 1.2em;
+    }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+    body {
+        font-size: 1.3em;
+    }
+}
+
 
 * {
     -webkit-box-sizing: border-box;
@@ -5,7 +32,6 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 
 html{
     font-family: "Helvetica Neue";
@@ -104,7 +130,7 @@ ul {
 .jumbotron .container-jumbotron {
     position: absolute;
     margin: 0;
-    top: 50%;
+    top: 300px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
