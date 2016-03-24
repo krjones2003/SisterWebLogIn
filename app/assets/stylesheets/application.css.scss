@@ -68,6 +68,7 @@ h3 {
     padding: 0px;
     letter-spacing: 1px;
     font-size: 3.0vw;
+    font-weight: 400;
     text-decoration: none;
 
 }
@@ -110,6 +111,7 @@ ul {
    -webkit-background-size: cover;
    -moz-background-size: cover;
    -o-background-size: cover;
+   position: relative;
     height: 420px;
     width: 100%;
     background-image: url('web2.jpg');
@@ -135,15 +137,17 @@ ul {
    display: block;
    margin: auto;
    color: #333;
-   font-size: 3.5vw;
+   font-size: 3.7vw;
    letter-spacing: .75px;
+   font-weight: 400;
    margin-bottom: 70px;
 }
 
-.container h2{
+h2{
     color: black;
     font-family: "Helvetica Neue";
-    font-size: 35px;
+    font-size: 2.75vw;
+    font-weight: 400;
     padding: 0px;     
 }
 
@@ -167,6 +171,8 @@ a.btn.btn-primary.btn-lg{
     margin-top: 20px;
     margin-left: 5px;
     font-style: regular;
+    font-weight: 400;
+    font-size: 2.5vw;
     color: black;
 }
 
@@ -186,10 +192,6 @@ a.btn.btn-primary.btn-lg{
     size: 15px;
     display: table-cell;
     color: black;  
-}
-
-h2 {
-    font-size: 2.5vw;
 }
 
 
