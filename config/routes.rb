@@ -2,9 +2,12 @@ Rails.application.routes.draw do
 
   get 'staticpages/home'
 
+  get 'staticpages/profiles'
+  
   get 'staticpages/about'
 
-  get 'staticpages/links'
+  get 'staticpages/calendar'
+  
 
   get 'calendar/show'
   

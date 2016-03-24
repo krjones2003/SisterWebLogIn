@@ -1,0 +1,194 @@
+/* line 2, /home/ubuntu/workspace/SisterWeb/app/assets/stylesheets/application.css.scss */
+* {
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* line 10, /home/ubuntu/workspace/SisterWeb/app/assets/stylesheets/application.css.scss */
+html {
+  font-family: "Helvetica Neue";
+  font-style: normal;
+  text-decoration: none;
+}
+
+/* line 16, /home/ubuntu/workspace/SisterWeb/app/assets/stylesheets/application.css.scss */
+.masthead:before {
+  height: 50px;
+  display: compact;
+  content: "";
+  display: block;
+  margin: 0px;
+}
+
+/* line 24, /home/ubuntu/workspace/SisterWeb/app/assets/stylesheets/application.css.scss */
+.masthead .container-masthead {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 100%;
+  display: table;
+  margin-bottom: 1px;
+  margin-left: 10px;
+  height: 40px;
+  display: inline;
+}
+
+/* line 36, /home/ubuntu/workspace/SisterWeb/app/assets/stylesheets/application.css.scss */
+.img-logo {
+  margin: 4em;
+  font-size: 1em;
+  display: inline-block;
+  margin: 0px;
+}
+
+/* line 43, /home/ubuntu/workspace/SisterWeb/app/assets/stylesheets/application.css.scss */
+h3 {
+  display: inline-block;
+  vertical-align: center;
+  margin-left: 5px;
+  margin-top: 15px;
+  padding: 0px;
+  letter-spacing: 1px;
+  font-size: 3.25vw;
+  text-decoration: none;
+}
+
+/* line 55, /home/ubuntu/workspace/SisterWeb/app/assets/stylesheets/application.css.scss */
+ul {
+  width: 100%;
+  list-style-type: none;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  background-color: white;
+  padding: 0px 15px;
+  display: inline-block;
+}
+
+/* line 66, /home/ubuntu/workspace/SisterWeb/app/assets/stylesheets/application.css.scss */
+li {
+  float: right;
+}
+
+/* line 71, /home/ubuntu/workspace/SisterWeb/app/assets/stylesheets/application.css.scss */
+li a {
+  display: block;
+  color: #00ace6;
+  text-align: top;
+  padding-top: 10px;
+  padding-bottom: 8px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-decoration: none;
+  font-family: "Helvetica Neue";
+  font-size: 18px;
+  margin-right: 8px;
+}
+
+/* line 85, /home/ubuntu/workspace/SisterWeb/app/assets/stylesheets/application.css.scss */
+li a:hover {
+  text-color: #1ac6ff;
+}
+
+/* line 89, /home/ubuntu/workspace/SisterWeb/app/assets/stylesheets/application.css.scss */
+.jumbotron:before {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  height: 420px;
+  background-image: url("web2.jpg");
+  -webkit-filter: opacity(20%);
+  z-index: -1;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: compact;
+  content: "";
+  display: block;
+}
+
+/* line 104, /home/ubuntu/workspace/SisterWeb/app/assets/stylesheets/application.css.scss */
+.jumbotron .container-jumbotron {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* line 114, /home/ubuntu/workspace/SisterWeb/app/assets/stylesheets/application.css.scss */
+.container-jumbotron h1 {
+  display: block;
+  margin: auto;
+  color: #333;
+  font-size: 3.5vw;
+  letter-spacing: .75px;
+  margin-bottom: 70px;
+}
+
+/* line 123, /home/ubuntu/workspace/SisterWeb/app/assets/stylesheets/application.css.scss */
+.container h2 {
+  color: black;
+  font-family: "Helvetica Neue";
+  font-size: 35px;
+  padding: 0px;
+}
+
+/* line 131, /home/ubuntu/workspace/SisterWeb/app/assets/stylesheets/application.css.scss */
+a.btn.btn-primary.btn-lg {
+  color: white;
+  background-color: #ffab00;
+  border-color: #ffab00;
+  padding: 8px 18px;
+  font-size: 21px;
+  text-decoration: none;
+  line-height: 1.333333;
+  border-radius: .3rem;
+  display: inline-block;
+  margin-left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+/* line 146, /home/ubuntu/workspace/SisterWeb/app/assets/stylesheets/application.css.scss */
+.container a {
+  margin-top: 20px;
+  margin-left: 5px;
+  font-style: regular;
+  color: black;
+}
+
+/* line 155, /home/ubuntu/workspace/SisterWeb/app/assets/stylesheets/application.css.scss */
+.row-jumbotron {
+  margin-top: 60px;
+  text-align: center;
+  width: 100%;
+  display: table;
+  font-style: regular;
+  color: black;
+}
+
+/* line 165, /home/ubuntu/workspace/SisterWeb/app/assets/stylesheets/application.css.scss */
+.col-lg-4 {
+  size: 15px;
+  display: table-cell;
+  color: black;
+}
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */

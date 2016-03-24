@@ -1,2 +1,25 @@
-<h1>Staticpages#about</h1>
-<p>Find me in app/views/staticpages/about.html.haml</p>
+.site-wrapper
+  .site-wrapper-inner
+    .cover-container
+      .masthead.clearfix
+        .inner
+          %h3.masthead-brand About SisterWeb
+          %nav.nav.nav-masthead
+            %a.nav-link.active{:href => "#"} Home
+            %a.nav-link{:href => "#"} Features
+            %a.nav-link{:href => "#"} Contact
+      .inner.cover
+        %h1.cover-heading Cover your page.
+        %p.lead SisterWeb was created by female software engineers looking for a 
+        %p.lead place to connect with other women. Our mission is to create a 
+        %p.lead commons where women can interact and find answers to questions 
+        %p.lead without judgment or criticism. 
+        %a.btn.btn-lg.btn-secondary{:href => "#"} Contact
+      .mastfoot
+        .inner
+          %p
+            Cover template for
+            = succeed "," do
+              %a{:href => "http://getbootstrap.com"} Bootstrap
+            = succeed "." do
+              %a{:href => "https://twitter.com/mdo"} @mdo
