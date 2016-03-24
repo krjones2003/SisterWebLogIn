@@ -26,13 +26,6 @@
 }
 
 
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-}
-
 html{
     font-family: "Helvetica Neue";
     font-style: normal;
@@ -105,7 +98,7 @@ ul {
       padding-right: 10px;
       text-decoration: none;
       font-family: "Helvetica Neue";
-      font-size: 18px;
+      font-size: 1.5vw;
       margin-right: 8px;
   }
       
@@ -193,6 +186,10 @@ a.btn.btn-primary.btn-lg{
     size: 15px;
     display: table-cell;
     color: black;  
+}
+
+h2 {
+    font-size: 2.5vw;
 }
 
 
