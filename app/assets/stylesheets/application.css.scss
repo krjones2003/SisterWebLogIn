@@ -55,11 +55,12 @@ html{
     display: table;
     margin-bottom: 1px;
     margin-left: 10px;
-    height: 40px;
+    height: 45px;
     display: inline;
 }
 
 .img-logo{
+    vertical-align: center;
     margin: 4em;
     font-size: 1em;
     display: inline-block; 
@@ -73,7 +74,7 @@ h3 {
     margin-top: 15px;
     padding: 0px;
     letter-spacing: 1px;
-    font-size: 3.25vw;
+    font-size: 3.0vw;
     text-decoration: none;
 
 }
@@ -117,10 +118,10 @@ ul {
    -moz-background-size: cover;
    -o-background-size: cover;
     height: 420px;
+    width: 100%;
     background-image: url('web2.jpg');
     -webkit-filter: opacity(20%);
     z-index: -1;
-    background-size: 100% 100%;
     background-repeat:no-repeat;
     display: compact;
     content: "";
@@ -130,7 +131,7 @@ ul {
 .jumbotron .container-jumbotron {
     position: absolute;
     margin: 0;
-    top: 300px;
+    top: 330px;
     left: 50%;
     margin-right: -50%;
     transform: translate(-50%, -50%);
