@@ -23,7 +23,7 @@
     .masthead  
       .container-masthead
         .col-md-4
-          %img.img-logo{:alt => "Logo", :height => "80", :src => asset_path("logo.png"),
+          %img.img-logo{:alt => "Logo", :height => "70", :src => asset_path("spiral.png"),
           :width => "70", :style => "float:left"}/
         .col-md-8  
           %h3{:style => "float:left"} SisterWeb
@@ -43,7 +43,11 @@
         %a{:href => '/staticpages/home'} Home
       %li{:style => "float:right"}  
   
-  %jumbotron    
+  %jumbotron 
+  
+  %site-wrapper
+  
+  %calendar
     
     
     = yield
