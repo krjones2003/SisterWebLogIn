@@ -13,3 +13,4 @@ more_profiles = [
 more_profiles.each do |profiles|
   Profile.create!(profiles)
 end
+
