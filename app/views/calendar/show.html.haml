@@ -11,6 +11,6 @@
     = calendar @date do |date|
       = date.day
       %ul
-        - @events_by_date.each do |t|
-          - if t.when == date
-            %li= link_to(t.what, t)
+        - @events_by_date.each do |event|
+          - if event.when == date
+            %td= link_to "#{event.what}", event_path(event)

@@ -1,0 +1,8 @@
+%h2 Event: #{@event.what}
+
+%h3
+  Location:
+  = @event.where
+%h4
+  Time:
+  = @event.when.strftime("%B %d, %Y %I:%M%p")
