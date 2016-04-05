@@ -33,7 +33,7 @@
       .col-md-12
         = calendar @date do |date|
           = date.day
-          %ul-calendar
+          .ul-calendar
             - @events_by_date.each do |t|
               - if t.when.strftime("%B %d, %Y") == date.strftime("%B %d, %Y")
                 %li-calendar= link_to(t.what, t)
