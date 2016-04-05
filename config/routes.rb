@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   
   resources :events
 
+  get 'events/show'
+
   resources :profiles
   root :to => redirect('/staticpages/home')
   
