@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
 
+controller :sessions do
+    get 'login' => :new
+    post 'login' => :create
+    get 'logout' => :destroy
+end
+  
   get 'users/new'
 
   resources :users
@@ -19,6 +25,8 @@ Rails.application.routes.draw do
   resources :events
 
   resources :profiles
+  
+  resources :users
   root :to => redirect('/staticpages/home')
   
 end
