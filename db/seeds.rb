@@ -14,8 +14,6 @@ more_profiles.each do |profiles|
   Profile.create!(profiles)
 end
 
-<<<<<<< HEAD
-=======
 
 more_events = [
   {:what => 'Scrum', :where => 'Mills College',
@@ -27,4 +25,3 @@ more_events = [
 more_events.each do |events|
   Event.create!(events)
 end
->>>>>>> bd78b51c00e0a5978bbd9622cba89eba9e680da7
