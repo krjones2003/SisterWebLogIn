@@ -24,6 +24,8 @@ end
   
   resources :events
 
+  get 'events/show'
+
   resources :profiles
   
   resources :users

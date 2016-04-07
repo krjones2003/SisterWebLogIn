@@ -28,12 +28,10 @@
 }
 
 
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-}
+
+/*Application
+*/
+
 
 html{
     font-family: "Helvetica Neue";
@@ -76,7 +74,8 @@ h3 {
     margin-top: 15px;
     padding: 0px;
     letter-spacing: 1px;
-    font-size: 3.0vw;
+    font-size: 2.50vw;
+    font-weight: 400;
     text-decoration: none;
 
 }
@@ -107,97 +106,14 @@ ul {
       padding-right: 10px;
       text-decoration: none;
       font-family: "Helvetica Neue";
-      font-size: 18px;
+      font-size: 1.5vw;
       margin-right: 8px;
   }
       
-      li a:hover{
-          text-color: #1ac6ff;
-      }
+ li a:hover{
+    text-color: #1ac6ff;
+}
      
-.jumbotron:before {
-   -webkit-background-size: cover;
-   -moz-background-size: cover;
-   -o-background-size: cover;
-    height: 420px;
-    width: 100%;
-    background-image: url('web2.jpg');
-    -webkit-filter: opacity(20%);
-    z-index: -1;
-    background-repeat:no-repeat;
-    display: compact;
-    content: "";
-    display: block;
-}
-
-.jumbotron .container-jumbotron {
-    position: absolute;
-    margin: 0;
-    top: 330px;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-}
-
-
-.container-jumbotron h1 {
-   display: block;
-   margin: auto;
-   color: #333;
-   font-size: 3.5vw;
-   letter-spacing: .75px;
-   margin-bottom: 70px;
-}
-
-.container h2{
-    color: black;
-    font-family: "Helvetica Neue";
-    font-size: 35px;
-    padding: 0px;     
-}
-
-
-a.btn.btn-primary.btn-lg{
-    color: white ;
-    background-color: #ffab00;
-    border-color: #ffab00;
-    padding: 8px 18px;
-    font-size: 21px;
-    text-decoration: none;
-    line-height: 1.333333;
-    border-radius: .3rem;
-    display: inline-block; 
-    margin-left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%);
-}
-
-.container a{
-    margin-top: 20px;
-    margin-left: 5px;
-    font-style: regular;
-    color: black;
-}
-
-
-
-.row-jumbotron {
-    margin-top: 60px;
-    text-align: center;
-    width: 100%;
-    display: table;
-    font-style: regular;
-    color: black;      
-}
-
-
-.col-lg-4 {
-    size: 15px;
-    display: table-cell;
-    color: black;  
-}
-
-
 
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
