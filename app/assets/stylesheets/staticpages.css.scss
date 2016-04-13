@@ -46,7 +46,7 @@
 }
 
 
-a.btn.btn-primary.btn-lg{
+.a.btn.btn-primary.btn-lg{
     color: white ;
     background-color: #ffab00;
     border-color: #ffab00;
@@ -61,6 +61,11 @@ a.btn.btn-primary.btn-lg{
     transform: translate(-50%, -50%);
 }
 
+:hover, :focus {
+   color: none;
+}
+
+
 .container a{
     margin-top: 20px;
     margin-left: 5px;
@@ -69,6 +74,8 @@ a.btn.btn-primary.btn-lg{
     font-size: 2.5vw;
     color: black;
 }
+
+
 
 .row-jumbotron {
     margin-top: 60px;
