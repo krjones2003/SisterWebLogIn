@@ -33,6 +33,8 @@ module Sisterweb
     config.active_record.raise_in_transactional_callbacks = true
   end
   
+  config.serve_static_assets = true
+  
 module CalendarExample
   class Application < Rails::Application
     config.autoload_paths += %W(#{config.root}/lib)
