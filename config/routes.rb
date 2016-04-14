@@ -4,9 +4,10 @@ controller :sessions do
     get 'login' => :new
     post 'login' => :create
     get 'logout' => :destroy
+    get '/auth/twitter/callback', to: 'sessions#create', :as => 'loginuser'
+    get 'auth/failure' => 'sessions#failure'
 end
-  
-  get 'users/new'
+ get 'users/new'
 
   resources :users
   get 'staticpages/home'
@@ -30,5 +31,6 @@ end
   
   resources :users
   root :to => redirect('/staticpages/home')
+
   
 end
